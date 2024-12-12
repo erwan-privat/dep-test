@@ -19,8 +19,8 @@ Clone the repository::
 
 Create the virtual environment with the root prefix `mm`::
 
-  mm/micromamba create -y -f dep-test/dep-test.yaml -r mm
+  mm/micromamba create -y -f dep-test/env.yaml -r mm
 
 Alternatively, we can specify a local environment path with::
 
-  mm/micromamba create -y -f dep-test/dep-test.yaml -r mm -p mm/envs/dep-test
+  mm/micromamba create -y -f dep-test/env.yaml -r mm -p mm/envs/dep-test
