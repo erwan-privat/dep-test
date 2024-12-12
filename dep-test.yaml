@@ -1,4 +1,4 @@
-name: cells
+name: dep-test
 channels:
   - conda-forge
 dependencies:
