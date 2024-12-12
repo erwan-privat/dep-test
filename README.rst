@@ -1,6 +1,9 @@
 Deployment test for micromamba
 ==============================
 
+[WIP] Without micromamba installed
+----------------------------------
+
 Create a workspace directory, in this example `workspace`::
 
   mkdir workspace && cd workspace
@@ -24,3 +27,13 @@ Create the virtual environment with the root prefix `mm`::
 Alternatively, we can specify a local environment path with::
 
   mm/micromamba create -y -f dep-test/env.yaml -r mm -p mm/envs/dep-test
+
+With micromamba installed
+-------------------------
+
+Clone the repository and change directory::
+
+  git clone https://github.com/erwan-privat/dep-test
+  cd dep-test
+
+
