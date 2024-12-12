@@ -20,20 +20,11 @@ Clone the repository::
 
   git clone https://github.com/erwan-privat/dep-test
 
-Create the virtual environment with the root prefix `mm`::
-
-  mm/micromamba create -y -f dep-test/env.yaml -r mm
-
-Alternatively, we can specify a local environment path with::
+Create the virtual environment with the root prefix `mm` and a local
+environment prefix::
 
   mm/micromamba create -y -f dep-test/env.yaml -r mm -p mm/envs/dep-test
 
-With micromamba installed
--------------------------
+Finally, run the script using the freshly installed env::
 
-Clone the repository and change directory::
-
-  git clone https://github.com/erwan-privat/dep-test
-  cd dep-test
-
-
+  mm/envs/dep-test/bin/python dep-test/test-torch.py
