@@ -10,7 +10,12 @@ import polars as pl
 import pandas as pd
 import matplotlib.pyplot as plt
 import altair as alt
+from colorama import init as colorama_init
+from colorama import Fore
+from colorama import Style
+
 alt.renderers.enable("browser")
+colorama_init()
 
 t = torch.rand(7)
 print(t)
@@ -41,3 +46,5 @@ print(pd_df)
 fig, ax = plt.subplots()
 pd_df.groupby("cat").per.plot(legend=True, ax=ax)
 fig.show()
+
+print(f"{Fore.CYAN}{Style.BRIGHT}ALL OK.{Style.RESET_ALL}")
