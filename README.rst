@@ -27,4 +27,4 @@ environment prefix::
 
 Finally, run the script using the freshly installed env::
 
-  mm/envs/dep-test/bin/python dep-test/test-torch.py
+  mm/envs/dep-test/bin/python -i dep-test/test-torch.py

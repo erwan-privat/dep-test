@@ -34,10 +34,10 @@ df = df.with_columns(
 
 print(df)
 
-# df.plot.bar(
-#   x="lbl",
-#   y=alt.Y("val", axis=alt.Axis(format="%")),
-# ).show()
+df.plot.bar(
+  x="lbl",
+  y=alt.Y("val", axis=alt.Axis(format="%")),
+).show()
 
 pd_df = df.to_pandas()
 pd_df.set_index("lbl", inplace=True)
